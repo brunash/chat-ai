@@ -3,12 +3,13 @@ import "./rootLayout.css";
 
 const RootLayout = () => {
   return (
-    <div className="tootLayout">
+    <div className="rootLayout">
       <header>
-        <Link to="/">
+        <Link to="/" className="logo">
           <img src="/logo.png" alt="" />
           <span>BOBA AI</span>
         </Link>
+        <div className="user">User</div>
       </header>
       <main>
         <Outlet />
